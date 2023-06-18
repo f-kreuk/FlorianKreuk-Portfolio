@@ -1,9 +1,10 @@
 :root {
   --orange: #ef622a;
-  --darkblue: #1f2e5f;
-  --heliotrope: #3d3d3d;
+  --darkblue: #3d5ab8;
+  --heliotrope: #faecec;
   --bone: #fafafa;
-  --grey: rgb(192, 190, 190);
+  --grey: rgb(233, 231, 231);
+  --darkgrey: rgb(52, 52, 53);
 }
 
 ::selection {
@@ -21,7 +22,7 @@ body {
   font-size: 2rem;
   line-height: 1.25;
   color: var(--darkblue);
-  background-color: var(--bone);
+  background-color: var(--darkblue);
 }
 
 h1,
@@ -54,36 +55,77 @@ header {
     width: 100%;
     margin: 0;
     padding: 1.25rem;
-    text-align:center;
+    text-align:left;
     background-color: var(--bone);
     display: inline-block;
-  }
+}
 
   header h1.page-title {
     padding: 0rem 1rem;
     font-size: 3.5rem;
     justify-content: left;
-    margin: 2rem auto;
+    text-align: left;
     display: inline-block;
+    float: left;
+    color: var(--darkgrey)
+    
   }
 
 .banner {
     background-color: var(--darkblue);
-    height: 5rem;
     left: 0;
     right: 0;
     background-size: 100%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: ;
+}
+
+.banner p {
+    color: var(--bone);
+    text-align: left;
 }
 
   main {
-    width: 96%;
+    width: 100%;
     margin: 1rem auto;
   }
 
   footer {
-    margin: 1.5rem;
-    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 1.25rem;
+    text-align:left;
+    background-color: var(--bone);
+    display: inline-block;
   }
+
+footer h3 {
+    color: var(--darkgrey);
+}
+
+footer ul {
+    float: right;
+    width: 100%;    
+}
+
+footer li {
+    display:inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-size: 1.5rem;
+    line-height: 1;
+    color: var(--darkgrey);
+    text-decoration: underline;
+    text-decoration-thickness: 12%;
+    text-decoration-color: var(--orange);
+    font-weight: bold;
+    float: right;
+    padding: 0rem 1rem;
+    link:var(--darkblue);
+
+}
 
   .headercontainer {
     display:flex;
@@ -123,16 +165,38 @@ header {
 }
 
   .AboutMe {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
     display: inline-block;
-    padding: 0rem 1rem;
+    padding: 5rem 5rem;
     padding: var(--darkblue);
     margin: var(--darkblue);
+    background-color: var(--darkblue);
+    background-image: var(--darkblue);
+    background-size: cover;
+    margin-left: 2rem;
   }
+
+aside {
+  flex: 1;
+  text-align: left;
+}
+
+aside img {
+    float: right;
+    margin-right: 5px;
+    border-bottom: 2px solid var(--bone);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+}
 
   .AboutMe h2 {
     color: var(--bone);
+    margin: 0 0 2rem 0;
+    padding: 0 1rem 0 0;
+
   }
 
   .row {
@@ -154,12 +218,20 @@ header {
     margin-bottom: 1.5rem;
     background-image: url("/assets/images/bubba.jpg");
     background-size: cover;
-    margin:5rem;
+    margin:.5rem;
     padding-right: 20rem;
     background-color: var(--darkblue);
     padding-top: 200px;
-
   }
+
+.card-column-big h3 {
+    color: var(--orange);
+}
+
+.card-column-big p {
+    color: var(--darkgrey);
+    font-weight: bold;
+}
 
   .card-column {
     flex: 1 0 100%;
@@ -178,19 +250,18 @@ header {
     outline: 2px var(--darkblue);
     outline-offset: -2px;
     transition: all 0.5s ease-in-out;
-    border-bottom: 2px dashed var(--darkblue);
     border-radius: 3px;
   }
 
   .code-card .card-header-big {
     position: relative;
-    margin: 2rem 3rem 0 -2rem;
+    margin: 0rem 3rem 0 -2rem;
     padding: 0.5rem 1rem;
-    background-color: var(--grey);
+    background-color: var(--bone);
     color: var(--orange);
     border: .5px dashed var(--heliotrope);
     border-bottom: 2px solid var(--darkblue);
-    border-radius: 3px;
+    border-radius: 8px;
     transition: all 2s ease-in-out;
   }
 
@@ -208,7 +279,11 @@ header {
 
   .code-card:hover,
 .code-card:hover .card-header {
-  box-shadow: inset 0px 0px 4px var(--orange), 0 0 4px var(--orange);
+  box-shadow: inset 0px 0px 4px var(--darkblue), 0 0 4px var(--darkblue);
+  background-color: var(--orange);
+  border-radius: 8px;
+  margin: 0 2rem 0 2rem;
+  color: var(--bone);
 }
 
 .code-card .code-block {
