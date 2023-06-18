@@ -1,12 +1,13 @@
 :root {
-  --bright-turquoise: #2aefcb;
-  --gin: #444444;
+  --orange: #ef622a;
+  --darkblue: #1f2e5f;
   --heliotrope: #3d3d3d;
-  --bone: #f3f3f3;
+  --bone: #fafafa;
+  --grey: rgb(192, 190, 190);
 }
 
 ::selection {
-  background-color: var(--bright-turquoise);
+  background-color: var(--orange);
   color: var(--bone);
 }
 
@@ -17,10 +18,9 @@ html {
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
     Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-
-  font-size: 1.75rem;
-  line-height: 1.5;
-  color: var(--gin);
+  font-size: 2rem;
+  line-height: 1.25;
+  color: var(--darkblue);
   background-color: var(--bone);
 }
 
@@ -32,164 +32,72 @@ h5,
 h6 {
   margin-bottom: 0.625rem;
   color: var(--heliotrope);
-  font-weight: 700;
+  font-weight: 750;
   line-height: 1.1;
 }
 
-h1 {
-  font-size: 4rem;
-}
+h1 {font-size: 3.5rem;}
 
-h2 {
-  font-size: 3.5rem;
-}
+h2 {font-size: 3.25rem;}
 
-h3 {
-  font-size: 3rem;
-}
+h3 {font-size: 3rem;}
 
-h4 {
-  font-size: 2.5rem;
-}
+h4 {font-size: 2.5rem;}
 
-h5 {
-  font-size: 2rem;
-}
+h5 {font-size: 2rem;}
 
-h6 {
-  font-size: 1.5rem;
-}
+h6 {font-size: 1.5rem;}
 
-p {
-  margin-bottom: 1rem;
-}
-
-code {
-  font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
-    'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
-    'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier,
-    monospace;
-}
+p {margin-bottom: 1rem;}
 
 header {
-  width: 96%;
-  margin: 0 auto;
-  padding: 2.5rem;
-  text-align: center;
-}
-
-header h1.page-title {
-  padding: 1rem 1.2rem;
-  font-size: 4.5rem;
-}
-
-main {
-  width: 96%;
-  margin: 2rem auto;
-}
-
-footer {
-  margin: 1.5rem;
-  text-align: center;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin-left: -1.5rem;
-  margin-right: -1.5rem;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.card-column {
-  flex: 1 0 100%;
-  padding: 1.5rem;
-  transition: flex-basis 500ms linear;
-  margin-bottom: 1.5rem;
-}
-
-.code-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  min-height: 100%;
-  padding: 2rem;
-  color: var(--heliotrope);
-
-  outline: 2px dashed var(--gin);
-  outline-offset: -2px;
-  transition: all 0.5s ease-in-out;
-}
-
-.code-card .card-header {
-  position: relative;
-  margin: -4rem 0 1.5rem 0;
-  padding: 0.5rem 1rem;
-  background-color: var(--bone);
-  color: var(--heliotrope);
-  border: 2px solid var(--gin);
-  border-radius: 8px;
-  transition: all 0.5s ease-in-out;
-}
-
-.code-card:hover,
-.code-card:hover .card-header {
-  box-shadow: inset 0px 0px 8px var(--heliotrope), 0 0 15px var(--heliotrope);
-}
-
-.code-card .code-block {
-  flex-grow: 1;
-}
-
-.code-card pre {
-  white-space: pre-wrap;
-  overflow: auto;
-  tab-size: 4;
-  padding: 1.2rem 1rem;
-  color: var(--gin);
-  border-radius: 8px;
-  background-image: linear-gradient(
-    rgba(232, 102, 236, 0.3) 0%,
-    rgba(232, 102, 236, 0.6) 100%
-  );
-  display: flex;
-  align-items: center;
-}
-
-.code-card pre:active {
-  user-select: all;
-}
-
-@media screen and (min-width: 768px) {
-  .card-column {
-    flex: 0 0 50%;
-    max-width: 50%;
+    width: 100%;
+    margin: 0;
+    padding: 1.25rem;
+    text-align:center;
+    background-color: var(--bone);
+    display: inline-block;
   }
 
-  .card-column:last-child {
-    flex-grow: 1;
+  header h1.page-title {
+    padding: 0rem 1rem;
+    font-size: 3.5rem;
+    justify-content: left;
+    margin: 2rem auto;
+    display: inline-block;
   }
+
+.banner {
+    background-color: var(--darkblue);
+    height: 5rem;
+    left: 0;
+    right: 0;
+    background-size: 100%;
 }
 
-@media screen and (min-width: 992px) {
-  header {
-    width: 75%;
+  main {
+    width: 96%;
+    margin: 1rem auto;
   }
 
-  .card-column {
-    flex: 0 0 33.333%;
-    max-width: 33.333%;
+  footer {
+    margin: 1.5rem;
+    text-align: left;
   }
-}
 
-.headercontainer {
+  .headercontainer {
     display:flex;
     justify-content:space-between;
     align-items:center; 
+    color: var(--heliotrope);
+    border-top: 2px solid var(--darkblue);
+    border-radius: 4px;
+    transition: all 0.5s ease-in-out;
+}
+
+  #navbar ul {
+    float: right;
+    width: 100%;
 }
 
 #navbar li {
@@ -197,11 +105,156 @@ footer {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
     Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
     font-size: 1.5rem;
-    line-height: 1.5;
-    color: var(--gin);
+    line-height: 1;
+    color: var(--orange);
+    text-decoration: underline;
+    text-decoration-thickness: 12%;
+    text-decoration-color: var(--orange);
+    font-weight: bold;
+    float: right;
+    padding: 0rem 1rem;
+    margin-bottom: 1rem;
+    
 } 
 
 #navbar a {
     text-decoration:none;
     padding-right:15px;
 }
+
+  .AboutMe {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    padding: 0rem 1rem;
+    padding: var(--darkblue);
+    margin: var(--darkblue);
+  }
+
+  .AboutMe h2 {
+    color: var(--bone);
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
+
+  .justify-center {
+    justify-content: center;
+  }
+
+  .card-column-big {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    transition: flex-basis 500ms linear;
+    margin-bottom: 1.5rem;
+  }
+
+  .card-column {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    transition: flex-basis 500ms linear;
+    margin-bottom: 1.5rem;
+  }
+
+  .code-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    padding: 2rem;
+    color: var(--heliotrope);
+    outline: 2px var(--darkblue);
+    outline-offset: -2px;
+    transition: all 0.5s ease-in-out;
+    border-bottom: 2px dashed var(--darkblue);
+    border-radius: 3px;
+  }
+
+  .code-card .card-header-big {
+    position: relative;
+    margin: 2rem 3rem 0 -2rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--grey);
+    color: var(--orange);
+    border: .5px dashed var(--heliotrope);
+    border-bottom: 2px solid var(--darkblue);
+    border-radius: 3px;
+    transition: all 2s ease-in-out;
+  }
+
+  .code-card .card-header {
+    position: relative;
+    margin: 2rem 3rem 0 -2rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--bone);
+    color: var(--orange);
+    border: .5px dashed var(--heliotrope);
+    border-bottom: 2px solid var(--darkblue);
+    border-radius: 3px;
+    transition: all 2s ease-in-out;
+  }
+
+  .code-card:hover,
+.code-card:hover .card-header {
+  box-shadow: inset 0px 0px 4px var(--orange), 0 0 4px var(--orange);
+}
+
+.code-card .code-block {
+    flex-grow: 1;
+  }
+
+  .code-card pre {
+    white-space: pre-wrap;
+    overflow: auto;
+    tab-size: 4;
+    padding: 1.2rem 1rem;
+    color: var(--darkblue);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+  }
+
+.card img {
+    width: 100%;
+    vertical-align: bottom;
+    max-width: 250px;
+    max-height: 250px;
+    display:-moz-inline-box;
+    display: inline-block;
+}
+
+.code-card pre:active {
+    user-select: all;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .card-column {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+}
+    @media screen and (min-width: 768px) {
+        .card-column1 {
+          flex: 0 0 50%;
+          max-width: 50%;
+        }
+    .card-column:last-child {
+      flex-grow: 1;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    header {
+      width: 100%;
+    }
+  
+    .card-column {
+      flex: 0 0 33.333%;
+      max-width: 33.333%;
+    }
+  }
