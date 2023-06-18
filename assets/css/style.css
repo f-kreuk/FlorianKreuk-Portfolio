@@ -220,7 +220,7 @@ aside img {
     padding: 1.5rem;
     transition: flex-basis 500ms linear;
     margin-bottom: 1.5rem;
-    background-image: url("/assets/images/bubba.jpg");
+    background-image: url("./assets/images/bubba.jpg");
     background-size: cover;
     margin:.5rem;
     padding-right: 20rem;
