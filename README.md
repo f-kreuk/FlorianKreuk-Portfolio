@@ -8,7 +8,7 @@ The following image demonstrates the web application's appearence:
 
 ![web application appearance](./assets/images/Portfoli-snapshot.PNG)
 
-The following link takes you to the deployed application: [link](https://f-kreuk.github.io/Module-1-Challenge/)
+The following link takes you to the deployed application: [link](https://f-kreuk.github.io/FlorianKreuk-Portfolio/)
 
 ## Installation
 N/A
