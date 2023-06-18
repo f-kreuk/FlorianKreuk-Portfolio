@@ -230,12 +230,15 @@ aside img {
 
 .card-column-big h3 {
     color: var(--orange);
-    text-decoration: none;
+    text-decoration: var(--bone);
 }
 
 .card-column-big p {
     color: var(--darkgrey);
     font-weight: bold;
+}
+
+.card-column-big a {
     text-decoration: none;
 }
 
