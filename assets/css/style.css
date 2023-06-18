@@ -67,7 +67,7 @@ header {
     text-align: left;
     display: inline-block;
     float: left;
-    color: var(--darkgrey)
+    color: var(--darkgrey);
     
   }
 
@@ -123,8 +123,11 @@ footer li {
     font-weight: bold;
     float: right;
     padding: 0rem 1rem;
-    link:var(--darkblue);
 
+}
+
+footer a {
+    color: var(--darkgrey)
 }
 
   .headercontainer {
@@ -162,6 +165,7 @@ footer li {
 #navbar a {
     text-decoration:none;
     padding-right:15px;
+    color: var(--darkgrey)
 }
 
   .AboutMe {
@@ -226,11 +230,13 @@ aside img {
 
 .card-column-big h3 {
     color: var(--orange);
+    text-decoration: none;
 }
 
 .card-column-big p {
     color: var(--darkgrey);
     font-weight: bold;
+    text-decoration: none;
 }
 
   .card-column {
